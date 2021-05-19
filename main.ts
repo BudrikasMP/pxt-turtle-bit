@@ -35,7 +35,7 @@ enum LT {
     Center,
     Right
 }
-//% color="#ff6800" icon="\uf1b9" weight=15
+//% color="#ff6800" icon="\f217" weight=15
 //% groups="['Мотор', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
 namespace turtleBit {
     /**
