@@ -12,10 +12,10 @@ enum COLOR {
  * use for control motor
  */
 enum DIR {
-    Run_forward = 0,
-    Run_back = 1,
-    Turn_Left = 2,
-    Turn_Right = 3
+    Двигаться_вперед = 0,
+    Двигаться_назад = 1,
+    Повернуть_налево = 2,
+    Повернуть_направо = 3
 }
 enum LR {
     Левая_cторона = 0, //LeftSide = 0,
