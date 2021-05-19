@@ -37,7 +37,7 @@ enum LT {
 }
 //% color="#ff6800" icon="\f1b9" weight=15
 //% groups="['Двигатель', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
-namespace УправлениеМашинкой {
+namespace Робот {
     /**
      * use for control PCA9685
      */
