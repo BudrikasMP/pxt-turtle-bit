@@ -36,7 +36,7 @@ enum LT {
     Right
 }
 //% color="#ff6800" icon="\f217" weight=15
-//% groups="['Мотор', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
+//% groups="['Двигатель', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
 namespace turtleBit {
     /**
      * use for control PCA9685
@@ -113,7 +113,7 @@ namespace turtleBit {
      */
     //% block="Машина $direction скорость: $speed \\%"
     //% speed.min=0 speed.max=100
-    //% group="Мотор" weight=99
+    //% group="Двигатель" weight=99
     export function run(direction: DIR, speed: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -159,7 +159,7 @@ namespace turtleBit {
      * set cat state
      */
     //% block="машина $sta"
-    //% group="Мотор" weight=98
+    //% group="Двигатель" weight=98
     export function state(sta: MotorState) {
         //if (!PCA9685_Initialized) {
         //init_PCA9685();
@@ -186,7 +186,7 @@ namespace turtleBit {
     /**
      * set speed of motor
      */
-    //% block="$M мотор run $D скорость: $speed \\%"
+    //% block="$M двигатель run $D скорость: $speed \\%"
     //% speed.min=0 speed.max=100
     //% group="Мотор" weight=97
     export function Motor(M: LR, D: MD, speed: number) {
@@ -220,9 +220,9 @@ namespace turtleBit {
     /**
      * set motor state
      */
-    //% block="$M мотор $act"
+    //% block="$M двигатель $act"
     //% speed.min=0 speed.max=100
-    //% group="Мотор" weight=96
+    //% group="Двигатель" weight=96
     export function MotorSta(M: LR, act: MotorState) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -256,9 +256,9 @@ namespace turtleBit {
      * set rgb-led brightness
      */
     let L_brightness = 4095;  //control the rgb-led brightness
-    //% block="LED brightness $br"
+    //% block="Яркость светодиода $br"
     //% br.min=0 br.max=255
-    //% group="RGB-led" weight=79
+    //% group="RGB-светодиод" weight=79
     export function LED_brightness(br: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -268,8 +268,8 @@ namespace turtleBit {
     /**
      * set the rgb-led color via the color card
      */
-    //% block="set $RgbLed RGBled $col"
-    //% group="RGB-led" weight=78
+    //% block="установить $RgbLed RGB светодиод $col"
+    //% group="RGB-светодиод" weight=78
     export function Led(RgbLed: LR, col: COLOR) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -322,9 +322,9 @@ namespace turtleBit {
     /**
      * set the rgb-led color via data
      */
-    //% block=" set RGBled $RgbLed R:$red G:$green B:$blue"
+    //% block=" Установить RGB цвет $RgbLed R:$red G:$green B:$blue"
     //% red.min=0 red.max=255 green.min=0 green.max=255 blue.min=0 blue.max=255
-    //% group="RGB-led" weight=77
+    //% group="RGB-светодиод" weight=77
     export function SetLed(RgbLed: LR, red: number, green: number, blue: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -348,8 +348,8 @@ namespace turtleBit {
     /**
      * turn off all rgb-led
      */
-    //% block="turn off all RGB-led"
-    //% group="RGB-led" weight=76
+    //% block="Отключить все RGB-светодиоды"
+    //% group="RGB-светодиод" weight=76
     export function OFFLed() {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -361,8 +361,8 @@ namespace turtleBit {
     }
 
     /////////////////////////////////////////////////////
-    //% block="LineTracking"
-    //% group="Sensor" weight=69
+    //% block="Движение по линии"
+    //% group="Сенсор" weight=69
     export function LineTracking(): number {
         let val = 0;
         /*switch(lt){
@@ -385,8 +385,8 @@ namespace turtleBit {
      * Ultrasonic sensor
      */
     let lastTime = 0;
-    //% block="Ultrasonic"
-    //% group="Sensor" weight=68
+    //% block="Ультразвуковой датчик"
+    //% group="Сенсор" weight=68
     export function ultra(): number {
         //send trig pulse
         pins.setPull(DigitalPin.P1, PinPullMode.PullNone);
@@ -411,8 +411,8 @@ namespace turtleBit {
     /**
      * A button on the driver board
      */
-    //% block="Button"
-    //% group="Sensor" weight=66
+    //% block="Кнопка"
+    //% group="Сенсор" weight=66
     export function button(): number {
         return pins.digitalReadPin(DigitalPin.P5);
     }
