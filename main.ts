@@ -2,11 +2,11 @@
  * use for RGB-LED
  */
 enum COLOR {
-    red,
-    green,
-    blue,
-    white,
-    black
+    красный, //red,
+    зеленый, //green,
+    голубей, //blue,
+    белый,  //white,
+    черный  //black
 }
 /**
  * use for control motor
@@ -279,21 +279,21 @@ namespace turtleBit {
             setPwm(9, 0, 0);
             setPwm(10, 0, 0);
             setPwm(11, 0, 0);
-            if (col == COLOR.red) {
+            if (col == COLOR.красный) { //red) {
                 setPwm(9, 0, L_brightness);
             }
-            if (col == COLOR.green) {
+            if (col == COLOR.зеленый) {
                 setPwm(10, 0, L_brightness);
             }
-            if (col == COLOR.blue) {
+            if (col == COLOR.голубой) {
                 setPwm(11, 0, L_brightness);
             }
-            if (col == COLOR.white) {
+            if (col == COLOR.белый) {
                 setPwm(9, 0, L_brightness);
                 setPwm(10, 0, L_brightness);
                 setPwm(11, 0, L_brightness);
             }
-            if (col == COLOR.black) {
+            if (col == COLOR.черный) {
             }
         }
 
@@ -301,21 +301,21 @@ namespace turtleBit {
             setPwm(6, 0, 0);
             setPwm(7, 0, 0);
             setPwm(8, 0, 0);
-            if (col == COLOR.red) {
+            if (col == COLOR.красный) {
                 setPwm(7, 0, L_brightness);
             }
-            if (col == COLOR.green) {
+            if (col == COLOR.зеленый) {
                 setPwm(6, 0, L_brightness);
             }
-            if (col == COLOR.blue) {
+            if (col == COLOR.голубой) {
                 setPwm(8, 0, L_brightness);
             }
-            if (col == COLOR.white) {
+            if (col == COLOR.белый) {
                 setPwm(6, 0, L_brightness);
                 setPwm(7, 0, L_brightness);
                 setPwm(8, 0, L_brightness);
             }
-            if (col == COLOR.black) {
+            if (col == COLOR.черный) {
             }
         }
     }
