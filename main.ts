@@ -37,7 +37,7 @@ enum LT {
 }
 //% color="#ff6800" icon="\f217" weight=15
 //% groups="['Двигатель', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
-namespace turtleBit {
+namespace УправлениеМашинкой {
     /**
      * use for control PCA9685
      */
@@ -186,7 +186,7 @@ namespace turtleBit {
     /**
      * set speed of motor
      */
-    //% block="$M двигатель run $D скорость: $speed \\%"
+    //% block="$M двигатель движение $D скорость: $speed \\%"
     //% speed.min=0 speed.max=100
     //% group="Мотор" weight=97
     export function Motor(M: LR, D: MD, speed: number) {
