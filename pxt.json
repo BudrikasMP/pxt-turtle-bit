@@ -4,7 +4,7 @@
     "description": "keyestudio turtle-bit for microbit",
     "dependencies": {
         "core": "*",
-        "neopixel": "github:mworkfun/pxt-neopixel-bluetooth",
+        "neopixel": "github:BudrikasMP/pxt-neopixel",
         "pxt-ir-remote": "github:BudrikasMP/pxt-ir-remote-ru"
     },
     "files": [
