@@ -35,7 +35,7 @@ enum LT {
     Центр, //Center,
     Справа //Right
 }
-//% color="#ff6800" icon="\uf1b9" weight=15
+//% color="#ff6800" icon="\uf17b" weight=15
 //% groups="['Двигатель', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
 namespace Робот {
     /**
