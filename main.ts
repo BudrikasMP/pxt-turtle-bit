@@ -36,7 +36,7 @@ enum LT {
     Right
 }
 //% color="#ff6800" icon="\uf1b9" weight=15
-//% groups="['Motor', 'RGB-led', 'Neo-pixel', 'Sensor', 'Tone']"
+//% groups="['Мотор', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
 namespace turtleBit {
     /**
      * use for control PCA9685
@@ -111,9 +111,9 @@ namespace turtleBit {
     /**
      * car run diretion
      */
-    //% block="car $direction speed: $speed \\%"
+    //% block="Машина $direction скорость: $speed \\%"
     //% speed.min=0 speed.max=100
-    //% group="Motor" weight=99
+    //% group="Мотор" weight=99
     export function run(direction: DIR, speed: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -158,8 +158,8 @@ namespace turtleBit {
     /**
      * set cat state
      */
-    //% block="car $sta"
-    //% group="Motor" weight=98
+    //% block="машина $sta"
+    //% group="Мотор" weight=98
     export function state(sta: MotorState) {
         //if (!PCA9685_Initialized) {
         //init_PCA9685();
@@ -186,9 +186,9 @@ namespace turtleBit {
     /**
      * set speed of motor
      */
-    //% block="$M motor run $D speed: $speed \\%"
+    //% block="$M мотор run $D скорость: $speed \\%"
     //% speed.min=0 speed.max=100
-    //% group="Motor" weight=97
+    //% group="Мотор" weight=97
     export function Motor(M: LR, D: MD, speed: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
@@ -220,9 +220,9 @@ namespace turtleBit {
     /**
      * set motor state
      */
-    //% block="$M motor $act"
+    //% block="$M мотор $act"
     //% speed.min=0 speed.max=100
-    //% group="Motor" weight=96
+    //% group="Мотор" weight=96
     export function MotorSta(M: LR, act: MotorState) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
