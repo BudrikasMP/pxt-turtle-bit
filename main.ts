@@ -4,7 +4,7 @@
 enum COLOR {
     красный, //red,
     зеленый, //green,
-    голубей, //blue,
+    голубой, //blue,
     белый,  //white,
     черный  //black
 }
@@ -18,22 +18,22 @@ enum DIR {
     Turn_Right = 3
 }
 enum LR {
-    LeftSide = 0,
-    RightSide = 1
+    Левая_cторона = 0, //LeftSide = 0,
+    Правая_сторона = 1 //RightSide = 1
 }
 enum MotorState {
-    stop = 0,
-    brake = 1
+    Стоп = 0, //stop = 0,
+    Тормоз = 1 //brake = 1
 }
 enum MD {
-    Forward = 0,
-    Back = 1
+    Вперед = 0, //Forward = 0,
+    Назад = 1 //Back = 1
 }
 
 enum LT {
-    Left,
-    Center,
-    Right
+    Слева, //Left,
+    Центр, //Center,
+    Справа //Right
 }
 //% color="#ff6800" icon="\f217" weight=15
 //% groups="['Двигатель', 'RGB-Светодиод', 'Neo-pixel', 'Сенсор', 'Тон']"
@@ -366,13 +366,13 @@ namespace turtleBit {
     export function LineTracking(): number {
         let val = 0;
         /*switch(lt){
-            case LT.Left  :
+            case LT.Слева  :
                 val = pins.digitalReadPin(DigitalPin.P14);
                 break;
-            case LT.Center:
+            case LT.Центр:
                 val = pins.digitalReadPin(DigitalPin.P15);
                 break;
-            case LT.Right :
+            case LT.Справа :
                 val = pins.digitalReadPin(DigitalPin.P16);
                 break;
         }*/
