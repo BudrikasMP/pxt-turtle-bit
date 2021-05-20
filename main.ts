@@ -188,7 +188,7 @@ namespace Робот {
      */
     //% block="$M двигатель движение $D скорость: $speed \\%"
     //% speed.min=0 speed.max=100
-    //% group="Мотор" weight=97
+    //% group="Двигатель" weight=97
     export function Motor(M: LR, D: MD, speed: number) {
         if (!PCA9685_Initialized) {
             init_PCA9685();
